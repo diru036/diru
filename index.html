@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ringraziamento Speciale</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            padding: 50px;
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        .special-thanks {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .special-thanks h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .special-thanks p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        
+        .compliments {
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            margin: 30px 0;
+        }
+        
+        .compliments h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .compliments ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .compliments li {
+            padding: 10px 0;
+            font-size: 1.05em;
+            color: #333;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .compliments li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+        }
+        
+        .car-section {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 3em;
+            animation: rotate 3s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .heart {
+            color: #f5576c;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Un Ringraziamento Speciale 💫</h1>
+        
+        <div class="special-thanks">
+            <h2>A Tommaso Lorito</h2>
+            <p>Che con la sua fantastica macchinina mi porta dove voglio e mi accompagna in ogni avventura!</p>
+            <div class="car-section">🚗</div>
+            <p style="margin-top: 20px; font-style: italic;">Sei davvero un amico straordinario</p>
+        </div>
+        
+        <div class="compliments">
+            <h3>I tuoi Pregi Straordinari</h3>
+            <ul>
+                <li>Sei un compagno di avventure incredibilmente bravo e affidabile</li>
+                <li>La tua generosità nel mettere sempre a disposizione la tua macchina è ammirevole</li>
+                <li>Hai quella rara capacità di rendere speciale ogni viaggio, anche il più semplice</li>
+                <li>Sei un amico leale, divertente e sempre pronto a aiutare</li>
+                <li>La tua compagnia rende ogni momento un'avventura indimenticabile</li>
+                <li>Sei una persona genuina e di grande valore umano</li>
+                <li>La tua pazienza, il tuo sorriso e la tua gentilezza sono contagiosi</li>
+                <li>Sei il tipo di amico che tutti vorrebbero avere nella propria vita</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Grazie di tutto, Tommaso! <span class="heart">❤️</span></p>
+            <p style="margin-top: 10px; color: #999;">Con sincera amicizia</p>
+        </div>
+    </div>
+</body>
+</html>
